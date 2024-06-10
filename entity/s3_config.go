@@ -50,7 +50,7 @@ func (s3Config S3Config) getSession() (*session.Session, error) {
 		log.Println(err)
 	}
 
-	region := "cn-north-1"
+	region := "auto"
 	if strings.HasSuffix(s3Config.Endpoint, "amazonaws.com") {
 		sp := strings.Split(s3Config.Endpoint, ".")
 		if len(sp) > 1 {
