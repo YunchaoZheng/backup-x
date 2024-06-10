@@ -44,7 +44,7 @@ RUN mkdir -p /root/.config/rclone/ && \
 
 WORKDIR /app
 
-VOLUME /app/backup-x-files
+
 
 # config ENV and rclone-default-config-path
 ENV TZ=Asia/Shanghai
